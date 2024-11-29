@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/voltar"
+        android:icon="@drawable/voltar"
+        android:showAsAction="ifRoom"
+        android:title="Voltar" />
+
+
+    <item
+        android:id="@+id/editar"
+        android:icon="@drawable/editar"
+        android:showAsAction="ifRoom"
+        android:title="Editar" />
+
+
+    <item
+        android:id="@+id/excluir"
+        android:icon="@drawable/apagar"
+        android:showAsAction="ifRoom"
+        android:title="Excluir" />
+</menu>

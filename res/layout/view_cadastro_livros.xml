@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4d4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ddfcff"
+        android:text="Título"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ddfcff"
+        android:ems="10"
+        android:hint="Título">
+
+        <requestFocus />
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#d3ffd6"
+        android:text="Ingredientes"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ScrollView
+        android:id="@+id/ScrollView03"
+        android:layout_width="fill_parent"
+        android:layout_height="180px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_weight="0.23"
+        android:background="#d3ffd6">
+
+        <EditText
+            android:id="@+id/etIngredientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.43"
+            android:background="#d3ffd6"
+            android:hint="Ingredientes" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffcef7"
+        android:text="Modo de Preparo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ScrollView
+        android:id="@+id/ScrollView04"
+        android:layout_width="fill_parent"
+        android:layout_height="180px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_weight="0.23"
+        android:background="#ffcef7"
+        android:paddingTop="0dp">
+
+        <EditText
+            android:id="@+id/etModoDePreparo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.43"
+            android:background="#ffcef7"
+            android:hint="Modo de Preparo" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addfoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Cadastrar" />
+</LinearLayout>

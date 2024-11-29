@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4d4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ListView
+        android:id="@+id/lvMostraTodosOsLivros"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"></ListView>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btExcluir"
+        android:background="#ddfcff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="false"
+        android:text="Título"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:background="#ddfcff"
+        android:textColor="#0614c6"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titulo"
+        android:layout_marginTop="14dp"
+        android:background="#d3ffd6"
+        android:text="Ingredientes"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_weight="0.37"
+        android:background="#d3ffd6">
+
+        <TextView
+            android:id="@+id/ingredientes"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_weight="0.43"
+            android:paddingBottom="8dp"
+            android:paddingTop="10dp"
+            android:textColor="#dc6800"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ScrollView01"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:background="#ffcef7"
+        android:text="Modo de Preparo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ScrollView
+        android:id="@+id/ScrollView02"
+        android:layout_width="fill_parent"
+        android:layout_height="50px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_weight="0.57"
+        android:background="#ffcef7">
+
+        <TextView
+            android:id="@+id/modoDePreparo"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:textColor="#0614c6"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+
+</LinearLayout>

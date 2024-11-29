@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- adicionar receita -->
+    <item android:id="@+id/adicionar"
+        android:icon="@drawable/add"
+        android:title="Adicionar"
+        android:showAsAction="ifRoom"/>
+
+    <!-- configuraçoes -->
+    <item android:id="@+id/configuracao"
+        android:icon="@drawable/config"
+        android:title="Configuração"
+        android:showAsAction="ifRoom" />
+
+    <!-- Sobre o app -->
+    <item android:id="@+id/sobre"
+        android:icon="@drawable/infor"
+        android:title="Sobre"
+        android:showAsAction="ifRoom" />
+
+    <!-- Sair -->
+    <item android:id="@+id/sair"
+        android:icon="@drawable/info"
+        android:title="Sair"
+        android:showAsAction="never"/>
+
+</menu>

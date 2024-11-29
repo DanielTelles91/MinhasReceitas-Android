@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4d4"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Configurações"
+        android:id="@+id/textView19"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Segurança do Banco de Dados"
+        android:id="@+id/textView20"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#9a1f21"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:id="@+id/btAbreEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backup"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btAbreRestaurar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Limpar o Banco de Dados"
+        android:id="@+id/textView22"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#9a1f21"
+        android:layout_weight="0.05"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpar"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/voltar"
+        android:layout_above="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp" />
+
+</LinearLayout>
